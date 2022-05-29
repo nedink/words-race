@@ -1,0 +1,17 @@
+{
+  "name": "words-race",
+  "version": "1.0.0",
+  "description": "Try to get to the word in the fewest jumps!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "openai": "^2.0.5"
+  }
+}

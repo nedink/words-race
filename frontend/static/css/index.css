@@ -1,0 +1,78 @@
+body {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 18px;
+    text-align: center;
+}
+
+#app {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 75vh;
+}
+
+.word-options, #leaderboard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    align-content: center;
+}
+
+div,
+span {
+    padding: .25em;
+}
+
+span {
+    border-radius: 0.25em;
+}
+
+hr {
+    border-style: unset;
+    border-top: 1px solid lightgray;
+}
+
+.special {
+    font-family: monospace;
+    background-color: white;
+    user-select: none;
+    border-radius: 0.25em;
+}
+
+
+.word-option:hover {
+    background-color: whitesmoke;
+    cursor: pointer;
+}
+
+.word-option:active {
+    background-color: antiquewhite;
+}
+
+.loader {
+    border: 2px solid lightgray;
+    -webkit-animation: spin 1s linear infinite;
+    animation: spin 1s linear infinite;
+    border-top: 2px solid gray;
+    border-radius: 50%;
+    width: 2em;
+    height: 2em;
+}
+
+@keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
