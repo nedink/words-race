@@ -1,6 +1,6 @@
 body {
-    font-family: 'Quicksand', sans-serif;
-    font-size: 18px;
+    font-family: monospace;
+    font-size: 2em;
     text-align: center;
 }
 
@@ -10,17 +10,8 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    min-height: 75vh;
 }
 
-.word-options, #leaderboard {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    align-content: center;
-}
 
 div,
 span {
@@ -37,10 +28,20 @@ hr {
 }
 
 .special {
-    font-family: monospace;
-    background-color: white;
+    background-color: whitesmoke;
     user-select: none;
+}
+
+.special,
+.word-option {
     border-radius: 0.25em;
+}
+
+#word-options {
+    height: 215px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 
@@ -49,9 +50,46 @@ hr {
     cursor: pointer;
 }
 
-.word-option:active {
-    background-color: antiquewhite;
+input {
+    border: 1px solid lightgray;
+    border-radius: 0.25em;
+    padding: .25em;
+    font: unset;
+    margin: .25em 0;
 }
+
+input[type="submit"],
+input[type="button"] {
+    border-color: whitesmoke;
+    background-color: whitesmoke;
+    cursor: pointer;
+}
+
+
+#leaderboard {
+    width: 100%;
+}
+
+.td-name, 
+.td-word, 
+.td-i {
+    text-align: left;
+}
+
+#leaderboard .td-clicks {
+    text-align: right;
+}
+
+tr:nth-child(even) {
+    background-color: whitesmoke;
+}
+
+table {
+    border-collapse: collapse
+}
+
+
+
 
 .loader {
     border: 2px solid lightgray;

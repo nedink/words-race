@@ -4,41 +4,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Single Page App</title>
+    <title>Words Race!</title>
+    <link rel="icon" href="/static/images/favicon.ico">
     <link rel="stylesheet" href="/static/css/index.css">
 </head>
 
 <body>
     <div id="app">
         <div id="app-width">
+            <div id="top-margin" style="min-height: 1em;"></div>
+
             <div id="instructions">
-                <div>You are looking for: <span id="target" class="special" style="background-color: whitesmoke;">condition</span></div>
+                <div>find one:</div>
+                <div id="target-words" class="special" style="width: 100%;">coffee tea toast milk juice</div>
             </div>
-            
+
             <hr>
-            
+
             <div id="word-options">
-                <div id="word-option-1" class="word-option special">physics</div>
-                <div id="word-option-2" class="word-option special">condition</div>
-                <div id="word-option-3" class="word-option special">love</div>
+                <div id="word-option-1" class="word-option">creature</div>
+                <div id="word-option-2" class="word-option">hilt</div>
+                <div id="word-option-3" class="word-option">suggestion</div>
+                <div id="word-option-3" class="word-option">death</div>
+                <div id="word-option-3" class="word-option">taxes</div>
             </div>
 
             <hr>
 
             <div id="scoring">
-                <div id="click-count">Clicks - 0</div>
+                <div id="click-count">clicks: 0</div>
                 <div id="submit-score">
-                
+
                 </div>
 
-                <div id="leaderboard">
+                <div id="leaderboard-container">
 
                 </div>
             </div>
 
             <!-- <hr> -->
             <!-- <label for="leaderboard">Leaderboard</label> -->
-
 
         </div>
     </div>
